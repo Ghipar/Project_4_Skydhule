@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black2">#181414</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#fa2020</color>
+    <color name="red2">#ff0002</color>
+    <color name="blue">#2f55fa</color>
+    <color name="blue2">#396480</color>
+    <color name="bluecer">#B1DEEF</color>
+    <color name="blueback">#E1F6FE</color>
+    <color name="white4">#ECF7FB</color>
+    <color name="white2">#F5F4F4</color>
+    <color name="bir">#008DFF</color>
+    <color name="bir2">#37BDF0</color>
+    <color name="linlay">#80C5E4EF</color>
+
+    //background color
+    <color name="start">#9D8CEE</color>
+    <color name="mid">#B4B0FB</color>
+    <color name="end">#D2A8D7</color>
+    <color name="end2">#DBA6CC</color>
+    <color name="tests">#BC72A7</color>
+    <color name="logbut">#3D5CC3</color>
+    <color name="wel">#19338C</color>
+    <color name="grey">#9094A1</color>
+    <color name="grey2">#c5cce0</color>
+    <color name="breg">#8F00FF</color>
+    <color name="btreg">#767FD9</color>
+    <color name="ungu">#3C3F84</color>
+    <color name="ungu2">#866EB8</color>
+    <color name="ungu3">#4D2F70</color>
+
+</resources>

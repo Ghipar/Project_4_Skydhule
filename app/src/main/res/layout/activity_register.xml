@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/breg"
+    tools:context=".Register">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/login_animation"
+            android:layout_width="match_parent"
+            android:layout_height="502dp"
+            android:scaleType="center"
+            android:src="@drawable/logolgin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:alpha="0.8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="309dp"
+            android:layout_height="320dp"
+            android:src="@drawable/logo_reg2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/login_animation" />
+
+        <LinearLayout
+            android:id="@+id/radi"
+            android:layout_width="match_parent"
+            android:layout_height="950dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/custom_radius"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            tools:layout_editor_absoluteX="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Register"
+                    android:textAllCaps="true"
+                    android:textColor="@color/wel"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/baseline_email_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Enter your email"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp" />
+
+
+                <EditText
+                    android:id="@+id/txtusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/baseline_person_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Enter your username"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginTop="15dp"
+                    app:hintEnabled="false"
+                    >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtpass"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textPassword"
+                            android:hint="Enter your password"
+                            android:ems="15"
+                            android:background="@drawable/custom_input"
+                            android:drawableStart="@drawable/baseline_lock_24"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:drawablePadding="12dp"
+                            />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginTop="15dp"
+                    app:hintEnabled="false"
+                    >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtpasscon"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textPassword"
+                            android:hint="Confirm your password"
+                            android:ems="15"
+                            android:background="@drawable/custom_input"
+                            android:drawableStart="@drawable/baseline_lock_24"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:drawablePadding="12dp"
+                            />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btnreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button4"
+                    android:text="Register"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="524dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="20dp">
+                        >
+                </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
