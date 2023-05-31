@@ -66,7 +66,8 @@ public class Berita extends AppCompatActivity {
                             nodat.setVisibility(View.GONE);
                             dataModel4.setJudul(title);
                             dataModel4.setDesc(desc);
-                            dataModel4.setGambar(api.host + "/frontend/assets/img/berita_image/" + gmbr);
+                            //dataModel4.setGambar(api.host + "/frontend/assets/img/berita_image/" + gmbr);
+                            dataModel4.setGambar(gmbr);
                             dataModel4.setLing(ling);
                             listData4.add(dataModel4);
                         }

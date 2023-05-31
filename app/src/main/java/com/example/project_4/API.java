@@ -1,7 +1,7 @@
 package com.example.project_4;
 
 public class API {
-    String host = "http://192.168.1.17:8000";
+    String host = "http://192.168.0.102:8000";
     String APIlogin = host + "/api/login";
     String APIReg = host + "/api/register";
     String APIVerEml =  host + "/api/forgotPass";

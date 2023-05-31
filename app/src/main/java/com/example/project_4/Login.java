@@ -66,8 +66,12 @@ public class Login extends AppCompatActivity {
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                kirimData();
+                if(txtusername.getText().toString().isEmpty() || txtpass.getText().toString().isEmpty())
+                {
+                    Toast.makeText(Login.this, "Mohon lengkapi data", Toast.LENGTH_SHORT).show();
+                } else {
+                    kirimData();
+                }
             }
 
             void kirimData() {

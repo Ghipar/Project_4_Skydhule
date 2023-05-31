@@ -8,6 +8,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -43,6 +44,15 @@ public class Register extends AppCompatActivity {
         txtemail = findViewById(R.id.txtemail);
         txtpass = findViewById(R.id.txtpass);
         txtpasscon = findViewById(R.id.txtpasscon);
+        ImageView back = (ImageView) findViewById(R.id.btnbackreg);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Register.this, Login.class);
+                startActivity(intent);
+            }
+        });
         btnreg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

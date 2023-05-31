@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,6 +44,15 @@ public class LupPass extends AppCompatActivity {
         TextView idnya = (TextView)findViewById(R.id.ids);
         txtpass.setFocusable(false);
         txtpasscon.setFocusable(false);
+        ImageView back = (ImageView) findViewById(R.id.btnbackfpas);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LupPass.this, Login.class);
+                startActivity(intent);
+            }
+        });
         btnconfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

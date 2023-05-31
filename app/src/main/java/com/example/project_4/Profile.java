@@ -60,6 +60,7 @@ public class Profile extends AppCompatActivity {
         TextView phone= (TextView)findViewById(R.id.phone);
         TextView alamat = (TextView)findViewById(R.id.alamat);
         TextView nama = (TextView)findViewById(R.id.nama);
+        LinearLayout btnlangg = (LinearLayout) findViewById(R.id.langgan);
         CircleImageView prof =(CircleImageView) findViewById(R.id.profile_image);
         SharedPreferences sp = getApplicationContext().getSharedPreferences("TokenPrefs", Context.MODE_PRIVATE);
         API api = new API();
@@ -80,10 +81,10 @@ public class Profile extends AppCompatActivity {
 
                     if(lvl.equals("3")){
                         prof.setBackground(getDrawable(R.drawable.propileprem));
-
+                        btnlangg.setVisibility(View.GONE);
                     } else  {
                         prof.setBackground(getDrawable(R.drawable.propile2));
-
+                        btnlangg.setVisibility(View.VISIBLE);
                     }
 
                     username.append(usernamedat);
